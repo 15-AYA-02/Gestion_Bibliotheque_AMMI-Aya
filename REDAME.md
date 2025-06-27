@@ -43,5 +43,22 @@ Gestion_Bibliotheque/
 ├── README.md
 └── requirements.txt
 ## Exemples d'utilisation:
-- Ajout de livre :
+
+### 1. Interface d'ajout de livre
+(assets/ajout_livre.png)
+
+### 2. Interface d'ajout de membre
+(assets/ajout_membre.png)
+
+### 3. Emprunt  de livre
+
+(assets/emprunt_livre.png)
+### 4.retour de livre
+
+(assets/rendre_livre.png)
+### 5.Statistiques générées automatiquement
+
+(assets/statistiques.png)
   
+## Crédits
+Projet développé par **Aya AMMI** 
