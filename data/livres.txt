@@ -1,0 +1,2 @@
+1;T1;A1;2001;G1;emprunte
+2;T2;A2;2002;G2;emprunte
