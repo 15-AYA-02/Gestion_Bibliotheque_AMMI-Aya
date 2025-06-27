@@ -7,7 +7,7 @@
 
 ### 1. Cloner le dépôt
 git clone https://github.com/15-AYA-02/Gestion_Bibliotheque_AMMI-Aya.git
-cd Gestion_Bibliotheque
+cd Gestion_Bibliotheque_AMMI-Aya
 ### 2. Créer un environnement virtuel 
 python -m venv venv
 venv\Scripts\activate
@@ -37,28 +37,33 @@ Gestion_Bibliotheque/
 │   ├── membres.txt
 │   └── historique.csv
 ├── assets/
-│   └── stats_auteurs.png
-    └── stats_emprunts.png
-    └── stats_genres.png
+│   ├── stats_auteurs.png
+│   ├── stats_emprunts.png
+│   ├── stats_genres.png
+│   ├── ajout_livre.png
+│   ├── ajout_membre.png
+│   ├── emprunt_livre.png
+│   ├── rendre_livre.png
+│   └── statistiques.pn
 ├── README.md
 └── requirements.txt
 ## Exemples d'utilisation:
 
 ### 1. Interface d'ajout de livre
-(assets/ajout_livre.png)
+![](assets/ajout_livre.png)
 
 ### 2. Interface d'ajout de membre
-(assets/ajout_membre.png)
+![](assets/ajout_membre.png)
 
 ### 3. Emprunt  de livre
 
-(assets/emprunt_livre.png)
-### 4.retour de livre
+![](assets/emprunt_livre.png)
+### 4. retour de livre
 
-(assets/rendre_livre.png)
-### 5.Statistiques générées automatiquement
+![](assets/rendre_livre.png)
+### 5. Statistiques générées automatiquement
 
-(assets/statistiques.png)
+![](assets/statistiques.png)
   
 ## Crédits
 Projet développé par **Aya AMMI** 
