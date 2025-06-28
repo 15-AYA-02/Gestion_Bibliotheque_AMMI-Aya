@@ -2,6 +2,7 @@ import json #pour sauvegarder les liste de livres dans membres.txt...
 import csv #pour enregistrer l'historique des emprunts/retours
 from datetime import datetime #pour dater chaque emprunt/retour
 from exceptions import * #importer les exceptions personnalisées depui exceptions.py
+import os
 
 class Livre:
     def __init__(self,ISBN,titre,auteur,annee,genre,status = 'disponible'):
@@ -67,9 +68,11 @@ class Bibliotheque:
         self.log_historique(ISBN,ID,"retour")
     
     def log_historique(self,ISBN,ID,action):
-        with open("data/historique.csv","a",newline='') as f:
-            writer = csv.writer(f)
-            writer.writerow([datetime.now().date(),ISBN,ID,action])
+        os.makedirs("data",exist_ok=True)
+        with open("data/historique.csv","a",newline="") as f:
+            writer = csv.writer(f,delimiter=";")
+            date = datetime.now().strftime("%Y-%m-%d")
+            writer.writerow([date,ISBN,ID,action])
     
     def sauvegarder_donnees(self):
         with open("data/livres.txt","w") as f:
